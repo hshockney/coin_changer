@@ -37,7 +37,9 @@ end
  assert_equal({quarter:0, dime:0, nickel:0, penny:3},coin_changer(1+1+1))
  end
 
-
+def test_for_ninety_nine_cents
+assert_equal({quarter:3, dime:2, nickel:0, penny:4},coin_changer(25+25+25+10+10+1+1+1+1))
+end
 
 
 
